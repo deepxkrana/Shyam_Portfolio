@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import ProjectCard from '../components/ProjectCard';
 import PatnaShuklaImg from '../images/PatnaShukla.jpg';
 import TSMSPImg from '../images/TSMSP.jpg';
@@ -166,12 +167,12 @@ const Projects: React.FC = () => {
           <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
             Let's discuss how strategic production management can bring your next project to life.
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="inline-flex items-center px-6 py-3 bg-amber-500 text-slate-900 font-semibold rounded-lg hover:bg-amber-400 transition-all duration-200"
           >
             Start a Conversation
-          </a>
+          </Link>
         </motion.div>
       </div>
     </div>
