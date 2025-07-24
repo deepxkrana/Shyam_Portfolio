@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Linkedin, User, Instagram, Facebook, Film } from 'lucide-react';
 
 const Footer: React.FC = () => {
@@ -20,12 +21,12 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
             <div className="space-y-2">
-              <a href="/projects" className="block text-gray-400 hover:text-amber-500 transition-colors">
+              <Link to="/projects" className="block text-gray-400 hover:text-amber-500 transition-colors">
                 Recent Projects
-              </a>
-              <a href="/experience" className="block text-gray-400 hover:text-amber-500 transition-colors">
+              </Link>
+              <Link to="/experience" className="block text-gray-400 hover:text-amber-500 transition-colors">
                 Experience
-              </a>
+              </Link>
               <a href="/contact" className="block text-gray-400 hover:text-amber-500 transition-colors">
                 Get In Touch
               </a>
